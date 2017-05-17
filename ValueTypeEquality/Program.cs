@@ -10,7 +10,7 @@ namespace ValueTypeEquality
     {
         static void Main(string[] args)
         {
-            var foodItems = new HashSet<FoodItem>();
+            var foodItems = new HashSet<FoodItem>(FoodItemEqualityComparer.Instance);
             foodItems.Add(new FoodItem("apple", FoodGroup.Fruit));
             foodItems.Add(new FoodItem("pear", FoodGroup.Fruit));
             foodItems.Add(new FoodItem("pineapple", FoodGroup.Fruit));
