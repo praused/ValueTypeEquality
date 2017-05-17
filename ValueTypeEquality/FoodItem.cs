@@ -27,6 +27,7 @@ namespace ValueTypeEquality
             return _name;
         }
 
+        #region equality implementation
         public bool Equals(FoodItem other)
         {
             return this._name == other._name && this._group == other._group;
@@ -52,5 +53,6 @@ namespace ValueTypeEquality
         {
             return _name.GetHashCode() ^ _group.GetHashCode();
         }
+        #endregion
     }
 }

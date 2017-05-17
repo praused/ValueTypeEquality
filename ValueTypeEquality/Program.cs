@@ -10,13 +10,13 @@ namespace ValueTypeEquality
     {
         static void Main(string[] args)
         {
-            FoodItem banana = new FoodItem("banana", FoodGroup.Fruit);
-            FoodItem banana2 = new FoodItem("banana", FoodGroup.Fruit);
-            FoodItem chocolate = new FoodItem("chocolate", FoodGroup.Sweets);
+            var foodItems = new List<FoodItem>();
+            foodItems.Add(new FoodItem("apple", FoodGroup.Fruit));
+            foodItems.Add(new FoodItem("pear", FoodGroup.Fruit));
+            foodItems.Add(new FoodItem("pineapple", FoodGroup.Fruit));
+            foodItems.Add(new FoodItem("apple", FoodGroup.Fruit));
 
-            Console.WriteLine("banana    ==  banana2:    " + (banana == banana2));
-            Console.WriteLine("banana2    ==  chocolate:    " + (banana2 == chocolate));
-            Console.WriteLine("chocolate    ==  banana:    " + (chocolate == banana));
+            foreach (var foodItem in foodItems) Console.WriteLine(foodItem);
         }
     }
 }
