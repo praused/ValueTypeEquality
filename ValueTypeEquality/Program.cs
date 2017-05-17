@@ -14,7 +14,7 @@ namespace ValueTypeEquality
             foodItems.Add(new FoodItem("apple", FoodGroup.Fruit));
             foodItems.Add(new FoodItem("pear", FoodGroup.Fruit));
             foodItems.Add(new FoodItem("pineapple", FoodGroup.Fruit));
-            foodItems.Add(new FoodItem("apple", FoodGroup.Fruit));
+            foodItems.Add(new FoodItem("Apple", FoodGroup.Fruit));
 
             foreach (var foodItem in foodItems) Console.WriteLine(foodItem);
         }
